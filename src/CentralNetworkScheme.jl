@@ -101,6 +101,11 @@ function Problem11(f₁, f₂, λ::Real, cpl::Coupling, bc::BoundaryCondition)
 end
 
 
+function Problem21(f₁, f₂,  f₃, λ::Real, cpl::Coupling, bc::BoundaryCondition)
+    Problem21(f₁, f₂, f₃, λ, cpl, bc, 0.5, false)
+end
+
+
 function numflux(u_l::Real, u_r::Real, v_l::Real, v_r::Real, s_l⁺::Real, s_r⁻::Real,
                  λ::Real)
     0.5 * (v_r + v_l) - 0.5 * λ * (u_r - u_l) - .5 * (s_r⁻ - s_l⁺)
