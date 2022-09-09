@@ -2,9 +2,13 @@ module CentralNetworkScheme
 
 using LinearAlgebra
 
-export Coupling, BoundaryCondition, Scheme, NumSolution11, NumSolution21, Problem11, Problem21
+export NumSolution11, NumSolution21, Problem11, Problem21
 export constantinitialdata11, constantinitialdata21, centralcoupling, centraluncoupled
 export u, dx
+export Coupling, CentralRelaxationLimit, LocalRelaxation, GodlewskiRaviart, TrafficFlowMaximization
+export BoundaryCondition, ZeroFlux, HomNeumann, Outgoing, Periodic
+export Scheme, FirstOrder, SecondOrder
+
 
 @enum Coupling CentralRelaxationLimit LocalRelaxation GodlewskiRaviart TrafficFlowMaximization
 @enum BoundaryCondition ZeroFlux HomNeumann Outgoing Periodic
