@@ -1,5 +1,5 @@
-# Implementation of the central scheme for networks of scalar conservation laws
-Code that implements the central scheme of the paper
+# Implementation of the central schemes for networks of scalar conservation laws
+Code that implements the schemes of the paper
 > Central schemes for networked scalar conservation laws
 
 by M. Herty, N. Kolbe, S. Müller
