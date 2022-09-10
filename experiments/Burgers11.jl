@@ -21,7 +21,6 @@ title = Plots.scatter(y, marker=0, markeralpha=0,
 plots = []
 for t in tsteps
     global s = centralcoupling(p, s, t, FirstOrder, .9)
-    mass = dx(s) * sum(u(s))
     push!(plots, scatter(s.xc, u(s), markershape=:plus, label="",
                          title=string("t=", t)))
 end
@@ -32,10 +31,8 @@ s.u₂= .5 .+ .5 * sin.(pi .* (1 .+ collect(s.xc[N:end])))
 k = 0
 for t in tsteps
     global s = centralcoupling(p, s, t, SecondOrder, .2)
-    mass = dx(s) * sum(u(s))
     push!(plots, scatter(s.xc, u(s), markershape=:plus, label=""))
 end
 
-Plt = plot(title, plot(plots ..., layout=(2,3), size=(1800, 900)),
-           layout=grid(2,1,heights=[0.1,0.9]))
+Plt = plot(plots ..., layout=(2,3), size=(1800, 900))
 display(Plt)
