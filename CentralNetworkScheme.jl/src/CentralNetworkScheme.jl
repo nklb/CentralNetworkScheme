@@ -346,7 +346,8 @@ function centralcoupling(p::Problem21, s::NumSolution21, T::Real, sc::Scheme=Fir
             nfx₃[1] = numflux(u_L3, s.u₃[1], v_L3, p.f₃(s.u₃[1]), 0, 0, p.λ)
         end
         
-        println("interface fluxes: street 1: ", nfx₁[[N-1, N]], ", street 2: ", nfx₂[[N-1, N]], ", street 3: ", nfx₃[[1, 2]])
+        # println("interface fluxes: street 1: ", nfx₁[[N-1, N]], ", street 2: ",
+        #         nfx₂[[N-1, N]], ", street 3: ", nfx₃[[1, 2]])
         if abs(nfx₁[N] + nfx₂[N] - nfx₃[1]) > 1e-12 && ~warned
             println("Scheme not conservative")
             warned = true
@@ -357,6 +358,7 @@ function centralcoupling(p::Problem21, s::NumSolution21, T::Real, sc::Scheme=Fir
         s.u₂ .-= dt/dx * diff(nfx₂)
         s.u₃ .-= dt/dx * diff(nfx₃)
         s.t += dt
+        println("t=", s.t)
         #readline()
     end
     s
