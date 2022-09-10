@@ -1,4 +1,4 @@
-# Implementation of the central schemes for networks of scalar conservation laws
+# Implementation of central schemes for networks of scalar conservation laws
 Code that implements the schemes of the paper
 > Central schemes for networked scalar conservation laws
 
