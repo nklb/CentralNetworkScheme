@@ -4,7 +4,7 @@ Code that implements the schemes of the paper
 
 by M. Herty, N. Kolbe, S. Müller
 
-A preprint of the paper will be available soon.
+A preprint of the paper is available on [arXiv](https://arxiv.org/abs/2209.05137).
 
 Julia codes were written by N. Kolbe
 
