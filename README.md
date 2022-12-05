@@ -4,7 +4,7 @@ Code that implements the schemes of the paper
 
 by M. Herty, N. Kolbe, S. Müller
 
-A preprint of the paper is available on [arXiv](https://arxiv.org/abs/2209.05137).
+The paper was recently accepted for publication in Networks and Heterogeneous Media, a preprint is available on [arXiv](https://arxiv.org/abs/2209.05137).
 
 Julia codes were written by N. Kolbe
 
