@@ -1,10 +1,14 @@
 # Implementation of central schemes for networks of scalar conservation laws
-Code that implements the schemes of the paper
+Code that implements the schemes of the two papers
 > Central schemes for networked scalar conservation laws
+
+and
+
+> A Central Scheme for Two Coupled Hyperbolic Systems
 
 by M. Herty, N. Kolbe, S. Müller
 
-The [paper](https://doi.org/10.3934/nhm.2023012) is published open access in Networks and Heterogeneous Media.
+The [first paper](https://doi.org/10.3934/nhm.2023012) is published open access in Networks and Heterogeneous Media. The second paper is accepted in Communications on Applied Mathematics and Computation.
 
 Julia codes were written by N. Kolbe
 
